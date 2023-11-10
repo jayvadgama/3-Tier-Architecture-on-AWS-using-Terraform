@@ -18,7 +18,7 @@ resource "aws_instance" "PublicWebTemplate" {
   connection {
     type        = "ssh"
     user        = "admin-user-00"
-    private_key = file("~/.ssh/source_key.pem") # Replace with your private key path
+    private_key = file("~/.ssh/source_key.pem")
     host        = self.public_ip
   }
 
